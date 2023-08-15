@@ -59,6 +59,12 @@
             </a>
           </div>
           <div class="logout">
+            <div class="menu">
+              <img
+                src="assets/dots.svg"
+                alt="menu"
+              />
+            </div>
             <img
               src="assets/exit.svg"
               alt="exit"
@@ -95,24 +101,9 @@
         </div>
         <div class="payments">
           <div class="options">
-            <div
-              id="tab1"
-              class="tab"
-            >
-              Fizetendő tételek
-            </div>
-            <div
-              id="tab2"
-              class="tab"
-            >
-              Eseti díj befizetése
-            </div>
-            <div
-              id="tab3"
-              class="tab active"
-            >
-              Fizetési előzmények
-            </div>
+            <div class="tab">Fizetendő tételek</div>
+            <div class="tab">Eseti díj befizetése</div>
+            <div class="tab active">Fizetési előzmények</div>
           </div>
           <div class="paymentContainer">
             <div class="titles">
@@ -127,42 +118,71 @@
                 class="card-header"
                 id="firstItem"
               >
-                <div class="id">
-                  <button class="btn btn-link">
+                <div class="mobileStatus">
+                  <div class="dataContainer">
                     <img
-                      src="assets/arrowRight.svg"
+                      src="assets/greyElipse.svg"
+                      alt="status"
+                    />
+                    <div class="data">
+                      <div>Folyamatban</div>
+                      <div class="value">5 000 Ft</div>
+                      <div class="date">Fizetési dátum: 2019. 06. 22.</div>
+                    </div>
+                  </div>
+                  <div class="buttonContainer">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#firstBody"
+                      aria-expanded="true"
+                      aria-controls="firstBody"
+                    >
+                      <img
+                        src="assets/arrowDown.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="desktopStatus">
+                  <div class="id">
+                    <button class="btn btn-link">
+                      <img
+                        src="assets/arrowRight.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                    <div class="text">EPAYMT8THS4GFDG</div>
+                  </div>
+                  <div class="payMethod">Bankkártya</div>
+                  <div class="date">2019. 06. 25</div>
+                  <div class="value">5 000 Ft</div>
+                  <div class="status">
+                    <img
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div>Beérkezett</div>
+                  </div>
+                  <img
+                    class="attachment"
+                    src="assets/attachment.svg"
+                    alt="attachment"
+                  />
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#fourthBody"
+                    aria-expanded="true"
+                    aria-controls="fourthBody"
+                  >
+                    <img
+                      src="assets/arrowDown.svg"
                       alt="arrowDown"
                     />
                   </button>
-                  <div class="text">EPAYMT8THS4GFDG</div>
                 </div>
-                <div class="payMethod">Bankkártya</div>
-                <div class="date">2019. 06. 25</div>
-                <div class="value">5 000 Ft</div>
-                <div class="status">
-                  <img
-                    src="assets/greyElipse.svg"
-                    alt="status"
-                  />
-                  <div>Folyamatban</div>
-                </div>
-                <img
-                  class="attachment"
-                  src="assets/attachment.svg"
-                  alt="attachment"
-                />
-                <button
-                  class="btn btn-link"
-                  data-toggle="collapse"
-                  data-target="#firstBody"
-                  aria-expanded="true"
-                  aria-controls="firstBody"
-                >
-                  <img
-                    src="assets/arrowDown.svg"
-                    alt="arrowDown"
-                  />
-                </button>
               </div>
               <div
                 id="firstBody"
@@ -205,42 +225,78 @@
                 class="card-header"
                 id="secondItem"
               >
-                <div class="id">
-                  <button class="btn btn-link">
+                <div class="mobileStatus">
+                  <div class="dataContainer">
                     <img
-                      src="assets/arrowRight.svg"
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div class="data">
+                      <div>Beérkezett</div>
+                      <div class="value">5 000 Ft</div>
+                      <div class="date">
+                        Fizetési dátum: 2019. 06. 22.
+                        <img
+                          class="attachment"
+                          src="assets/attachment.svg"
+                          alt="attachment"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttonContainer">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#secondBody"
+                      aria-expanded="true"
+                      aria-controls="secondBody"
+                    >
+                      <img
+                        src="assets/arrowDown.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="desktopStatus">
+                  <div class="id">
+                    <button class="btn btn-link">
+                      <img
+                        src="assets/arrowRight.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                    <div class="text">EPAYMT8THS4GFDG</div>
+                  </div>
+                  <div class="payMethod">Bankkártya</div>
+                  <div class="date">2019. 06. 25</div>
+                  <div class="value">5 000 Ft</div>
+                  <div class="status">
+                    <img
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div>Beérkezett</div>
+                  </div>
+                  <img
+                    class="attachment"
+                    src="assets/attachment.svg"
+                    alt="attachment"
+                  />
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#fourthBody"
+                    aria-expanded="true"
+                    aria-controls="fourthBody"
+                  >
+                    <img
+                      src="assets/arrowDown.svg"
                       alt="arrowDown"
                     />
                   </button>
-                  <div class="text">123456789</div>
                 </div>
-                <div class="payMethod">Átutalás</div>
-                <div class="date">2019. 06. 25</div>
-                <div class="value">5 000 Ft</div>
-                <div class="status">
-                  <img
-                    src="assets/greenElipse.svg"
-                    alt="status"
-                  />
-                  <div>Beérkezett</div>
-                </div>
-                <img
-                  class="attachment invisible"
-                  src="assets/attachment.svg"
-                  alt="attachment"
-                />
-                <button
-                  class="btn btn-link"
-                  data-toggle="collapse"
-                  data-target="#secondBody"
-                  aria-expanded="true"
-                  aria-controls="secondBody"
-                >
-                  <img
-                    src="assets/arrowDown.svg"
-                    alt="arrowDown"
-                  />
-                </button>
               </div>
               <div
                 id="secondBody"
@@ -283,42 +339,78 @@
                 class="card-header"
                 id="thirdItem"
               >
-                <div class="id">
-                  <button class="btn btn-link">
+                <div class="mobileStatus">
+                  <div class="dataContainer">
                     <img
-                      src="assets/arrowRight.svg"
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div class="data">
+                      <div>Beérkezett</div>
+                      <div class="value">5 000 Ft</div>
+                      <div class="date">
+                        Fizetési dátum: 2019. 06. 22.
+                        <img
+                          class="attachment"
+                          src="assets/attachment.svg"
+                          alt="attachment"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttonContainer">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#thirdBody"
+                      aria-expanded="true"
+                      aria-controls="thirdBody"
+                    >
+                      <img
+                        src="assets/arrowDown.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="desktopStatus">
+                  <div class="id">
+                    <button class="btn btn-link">
+                      <img
+                        src="assets/arrowRight.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                    <div class="text">EPAYMT8THS4GFDG</div>
+                  </div>
+                  <div class="payMethod">Bankkártya</div>
+                  <div class="date">2019. 06. 25</div>
+                  <div class="value">5 000 Ft</div>
+                  <div class="status">
+                    <img
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div>Beérkezett</div>
+                  </div>
+                  <img
+                    class="attachment"
+                    src="assets/attachment.svg"
+                    alt="attachment"
+                  />
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#fourthBody"
+                    aria-expanded="true"
+                    aria-controls="fourthBody"
+                  >
+                    <img
+                      src="assets/arrowDown.svg"
                       alt="arrowDown"
                     />
                   </button>
-                  <div class="text">EPAYMT8THS4GF345DG</div>
                 </div>
-                <div class="payMethod">Bankkártya</div>
-                <div class="date">2019. 06. 25</div>
-                <div class="value">5 000 Ft</div>
-                <div class="status">
-                  <img
-                    src="assets/redElipse.svg"
-                    alt="status"
-                  />
-                  <div>Sikertelen</div>
-                </div>
-                <img
-                  class="attachment"
-                  src="assets/attachment.svg"
-                  alt="attachment"
-                />
-                <button
-                  class="btn btn-link"
-                  data-toggle="collapse"
-                  data-target="#thirdBody"
-                  aria-expanded="true"
-                  aria-controls="thirdBody"
-                >
-                  <img
-                    src="assets/arrowDown.svg"
-                    alt="arrowDown"
-                  />
-                </button>
               </div>
               <div
                 id="thirdBody"
@@ -361,42 +453,71 @@
                 class="card-header"
                 id="fourthItem"
               >
-                <div class="id">
-                  <button class="btn btn-link">
+                <div class="mobileStatus">
+                  <div class="dataContainer">
                     <img
-                      src="assets/arrowRight.svg"
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div class="data">
+                      <div>Beérkezett</div>
+                      <div class="value">5 000 Ft</div>
+                      <div class="date">Fizetési dátum: 2019. 06. 22.</div>
+                    </div>
+                  </div>
+                  <div class="buttonContainer">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#fourthBody"
+                      aria-expanded="true"
+                      aria-controls="fourthBody"
+                    >
+                      <img
+                        src="assets/arrowDown.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="desktopStatus">
+                  <div class="id">
+                    <button class="btn btn-link">
+                      <img
+                        src="assets/arrowRight.svg"
+                        alt="arrowDown"
+                      />
+                    </button>
+                    <div class="text">EPAYMT8THS4GFDG</div>
+                  </div>
+                  <div class="payMethod">Bankkártya</div>
+                  <div class="date">2019. 06. 25</div>
+                  <div class="value">5 000 Ft</div>
+                  <div class="status">
+                    <img
+                      src="assets/greenElipse.svg"
+                      alt="status"
+                    />
+                    <div>Beérkezett</div>
+                  </div>
+                  <img
+                    class="attachment"
+                    src="assets/attachment.svg"
+                    alt="attachment"
+                  />
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#fourthBody"
+                    aria-expanded="true"
+                    aria-controls="fourthBody"
+                  >
+                    <img
+                      src="assets/arrowDown.svg"
                       alt="arrowDown"
                     />
                   </button>
-                  <div class="text">EPAYMT8THS4GFDG</div>
                 </div>
-                <div class="payMethod">Bankkártya</div>
-                <div class="date">2019. 06. 25</div>
-                <div class="value">5 000 Ft</div>
-                <div class="status">
-                  <img
-                    src="assets/greenElipse.svg"
-                    alt="status"
-                  />
-                  <div>Beérkezett</div>
-                </div>
-                <img
-                  class="attachment"
-                  src="assets/attachment.svg"
-                  alt="attachment"
-                />
-                <button
-                  class="btn btn-link"
-                  data-toggle="collapse"
-                  data-target="#fourthBody"
-                  aria-expanded="true"
-                  aria-controls="fourthBody"
-                >
-                  <img
-                    src="assets/arrowDown.svg"
-                    alt="arrowDown"
-                  />
-                </button>
               </div>
               <div
                 id="fourthBody"
