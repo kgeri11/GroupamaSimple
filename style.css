@@ -7,11 +7,173 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*Text styles normal*/
+
+.navText {
+  color: #0a113d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.tabTitle {
+  color: #283168;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+
+  @media (max-width: 991.98px) {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
+}
+
+.tabTitleActive {
+  font-weight: 600;
+  border-bottom: 3px solid #01bba1;
+  padding-bottom: 5px;
+}
+
+.title {
+  color: #283168;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+
+.userDataNormal {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.479px;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+
+.columnHeaderTitle {
+  color: #6f7381;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.cardNormal {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardCapitalized {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.879px;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+
+.cardBodyTitle {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.cardBodyBig {
+  color: #3d424c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardHeaderBigBold {
+  color: #3d424c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cardBodyBigBold {
+  color: #3d424c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/*Text styles mobile*/
+
+.mobileBigBold {
+  color: #3d424c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 163.418%;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+
+.mobileNormal {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mobileNormalBold {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mobileLittle {
+  color: #3d424c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.mobileTab {
+  color: #283168;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
 .contentContainer {
   width: 100%;
   height: 100%;
   background-color: #fafafc;
 }
+
+/*Header*/
 
 .header {
   width: 100%;
@@ -86,19 +248,6 @@ body {
 }
 
 .logout > .text {
-  color: #0a113d;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.5px;
-  display: flex;
-  width: 55px;
-  height: 10px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-
   @media (max-width: 991.98px) {
     display: none;
   }
@@ -117,6 +266,8 @@ body {
   }
 }
 
+/*Left data container*/
+
 .userData {
   width: 303px;
   height: 100%;
@@ -133,15 +284,6 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 0;
-}
-
-.card-header > .title {
-  color: #283168;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.75px;
 }
 
 .userData > .card > .card-header {
@@ -163,16 +305,7 @@ body {
   height: 12px;
 }
 
-.wrapper > .title,
-.data {
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 146.28%;
-  letter-spacing: 0.75px;
-  text-transform: capitalize;
-}
+/*Right data container*/
 
 .payments {
   width: 852px;
@@ -190,34 +323,26 @@ body {
 
   @media (max-width: 991.98px) {
     justify-content: center;
+    align-items: center;
   }
 }
 
 .options > .tab {
-  color: #283168;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.75px;
   margin-right: 23px;
-  height: 10px;
   padding: 40px 0 37px;
   cursor: pointer;
 
   @media (max-width: 991.98px) {
     width: 93px;
-    height: 28px;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
   }
 }
 
 .options > .tab:last-child {
   margin-right: 0;
-}
-
-.active {
-  border-bottom: 3px solid #01bba1;
 }
 
 .paymentContainer {
@@ -235,16 +360,6 @@ body {
   @media (max-width: 991.98px) {
     display: none;
   }
-}
-
-.paymentContainer > .titles > .title {
-  color: #6f7381;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.5px;
-  height: 9px;
 }
 
 .paymentContainer > .titles > .id {
@@ -319,11 +434,6 @@ body {
 
 .id > .text {
   width: 87px;
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -368,25 +478,10 @@ body {
 
 .dataContainer > .data {
   margin-left: 20px;
-  color: #3d424c;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .buttonContainer > .btn {
   padding: 0;
-}
-
-.dataContainer > .data > .value {
-  color: #3d424c;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 163.418%;
-  letter-spacing: 0.75px;
-  text-transform: capitalize;
 }
 
 .dataContainer > .data > .date {
@@ -416,13 +511,6 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22.879px;
-  letter-spacing: 0.75px;
-  text-transform: capitalize;
   margin-right: 59px;
 
   @media (max-width: 991.98px) {
@@ -438,11 +526,6 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-right: 72px;
 }
 
@@ -453,11 +536,6 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #3d424c;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   margin-right: 50px;
 }
 
@@ -472,16 +550,6 @@ body {
   @media (max-width: 991.98px) {
     display: none;
   }
-}
-
-.status > .text {
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22.879px;
-  letter-spacing: 0.75px;
-  text-transform: capitalize;
 }
 
 .status > img {
@@ -501,13 +569,17 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f1f2f4;
+
+  @media (max-width: 991.98px) {
+    display: none;
+  }
 }
 
-.paymentContainer > .card-body {
+.collapse > .card-body {
   padding: 0;
 }
 
-.period {
+.info > .period {
   height: 42px;
   width: 169px;
   display: flex;
@@ -515,7 +587,7 @@ body {
   margin-right: 100px;
 }
 
-.fee {
+.info > .fee {
   height: 42px;
   width: 92px;
   display: flex;
@@ -523,7 +595,7 @@ body {
   margin-right: 63px;
 }
 
-.accounted {
+.info > .accounted {
   height: 42px;
   width: 169px;
   display: flex;
@@ -533,48 +605,26 @@ body {
 .period > .title,
 .fee > .title,
 .accounted > .title {
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.5px;
   margin-bottom: 7px;
 }
 
-.period > .date,
-.fee > .value {
-  font-weight: 400;
-}
-
-.accounted > .value {
-  font-weight: 600;
-}
-
-.receipt {
+.card-body > .receipt {
   height: 100px;
   width: 100%;
   padding: 25px 30px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 991.98px) {
+    display: none;
+  }
 }
 
 .downloads > .title {
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.5px;
   margin-bottom: 16px;
 }
 
 .downloads > .receipts {
-  color: #3d424c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -582,4 +632,80 @@ body {
 
 .receipts > img {
   margin-right: 18px;
+}
+
+/*Mobile info*/
+
+.infoMobile {
+  display: none;
+
+  @media (max-width: 991.98px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f2f4;
+    padding: 24px 16px;
+  }
+}
+
+.infoMobile > .status,
+.infoMobile > .id {
+  margin-bottom: 24px;
+}
+
+/*Mobile receipt*/
+
+.receiptMobile {
+  display: none;
+
+  @media (max-width: 991.98px) {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f1f2f4;
+    padding: 24px 16px;
+  }
+}
+
+.receiptMobile > .title {
+  margin-bottom: 12px;
+}
+
+.receiptMobile > .receipts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.receiptMobile > .receipts > .receipt {
+  display: flex;
+  align-items: center;
+}
+
+.receiptMobile > .receipts > .receipt > img {
+  margin-right: 12px;
+}
+
+/*Mobile fees*/
+
+.feesMobile {
+  display: none;
+
+  @media (max-width: 991.98px) {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f1f2f4;
+    padding: 24px 30px 24px 16px;
+  }
+}
+
+.feesMobile > .period {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.feesMobile > .fees {
+  display: flex;
+  justify-content: space-between;
 }
