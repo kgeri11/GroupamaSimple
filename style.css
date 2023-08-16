@@ -157,16 +157,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-.mobileTab {
-  color: #283168;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.5px;
-}
-
 .contentContainer {
   width: 100%;
   padding-bottom: 300px;
@@ -362,8 +352,7 @@ body {
 .paymentContainer > .titles {
   display: flex;
   align-items: center;
-  padding-left: 24px;
-  height: 55px;
+  padding: 30px 24px 16px;
 
   @media (max-width: 991.98px) {
     display: none;
@@ -424,7 +413,7 @@ body {
 
   @media (max-width: 991.98px) {
     height: 102px;
-    padding: 24px 26px 16px;
+    padding: 24px 26px;
   }
 }
 
@@ -455,7 +444,7 @@ body {
   margin-right: 8px;
 }
 
-.card-header > .container {
+/* .card-header > .container {
   display: flex;
 
   @media (max-width: 991.98px) {
@@ -466,7 +455,7 @@ body {
     padding: 0;
     margin: 0;
   }
-}
+} */
 
 .card-header > .mobileStatus {
   display: flex;
@@ -548,6 +537,10 @@ body {
   margin-right: 50px;
 }
 
+.desktopStatus > .btn {
+  padding: 0;
+}
+
 .desktopStatus > .status {
   display: flex;
   align-items: center;
@@ -593,7 +586,7 @@ body {
   width: 169px;
   display: flex;
   flex-direction: column;
-  margin-right: 100px;
+  margin-right: 116px;
 }
 
 .info > .fee {
