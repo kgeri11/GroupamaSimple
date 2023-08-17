@@ -60,8 +60,11 @@ body {
   font-weight: 400;
   line-height: 20.479px;
   letter-spacing: 0.75px;
-  text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
+}
+
+.userDataNormal::first-letter {
+  text-transform: capitalize;
 }
 
 .columnHeaderTitle {
@@ -469,6 +472,11 @@ body {
   }
 }
 
+.mobileStatusContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
 .dataContainer {
   display: flex;
 }
@@ -487,6 +495,7 @@ body {
 
 .date > .attachment {
   margin-right: 0;
+  margin-left: 5px;
   height: 17px;
   width: 17px;
 }
