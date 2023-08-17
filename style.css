@@ -16,6 +16,7 @@ body {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .tabTitle {
@@ -173,7 +174,6 @@ body {
 
 .contentContainer {
   width: 100%;
-  padding-bottom: 300px;
   background-color: #fafafc;
 }
 
@@ -207,7 +207,7 @@ body {
   }
 }
 
-.logo > img {
+.logo > a > img {
   width: 130px;
   height: 34px;
 
@@ -282,7 +282,7 @@ body {
 
 .userData {
   width: 303px;
-  height: 100%;
+  min-height: 771px;
   background-color: #fff;
   box-shadow: 0px 2px 12px 0px rgba(10, 17, 61, 0.1);
   margin-right: 25px;
@@ -349,7 +349,6 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0;
   }
 }
 
